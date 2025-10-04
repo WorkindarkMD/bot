@@ -1,64 +1,64 @@
-# Gem.Bot Ecosystem v3 - Sprint 1: The Nervous System
+# Экосистема Gem.Bot v3 - Спринт 1: Нервная система
 
-This repository contains the initial implementation of the Gem.Bot Ecosystem, focusing on establishing the core communication layer between its three main components as outlined in Sprint 1.
+Этот репозиторий содержит первоначальную реализацию экосистемы Gem.Bot, сфокусированную на создании базового коммуникационного слоя между тремя основными компонентами, как описано в Спринте 1.
 
-## Architecture
+## Архитектура
 
-The system consists of three distinct components that communicate in real-time via WebSockets:
+Система состоит из трех отдельных компонентов, которые общаются в реальном времени через WebSockets:
 
-1.  **Gem.Bot Core (`gem_bot_core/`)**: The central WebSocket server. It acts as a message broker, listening for connections from Oracle Agents and Strategist Panels. Its primary role in this sprint is to receive "heartbeat" messages from agents and forward them to all connected panels.
+1.  **Ядро Gem.Bot (`gem_bot_core/`)**: Центральный WebSocket-сервер. Он действует как брокер сообщений, прослушивая подключения от Агентов "Оракул" и Панелей Стратега. Его основная роль в этом спринте — получать "heartbeat" (сигналы жизнеспособности) от агентов и пересылать их всем подключенным панелям.
 
-2.  **Oracle Agent (`oracle_agent/`)**: A WebSocket client that represents a data-gathering or trade-execution bot on a specific exchange. In this sprint, its sole function is to connect to the Gem.Bot Core and periodically send a `heartbeat` message to signal that it is alive and operational.
+2.  **Агент "Оракул" (`oracle_agent/`)**: Клиент WebSocket, представляющий собой бота для сбора данных или исполнения сделок на конкретной бирже. В этом спринте его единственная функция — подключаться к Ядру Gem.Bot и периодически отправлять `heartbeat`-сообщение, чтобы сигнализировать о том, что он жив и работает.
 
-3.  **Strategist Panel (`strategist_panel/`)**: A WebSocket client that serves as the human operator's command center. In this sprint, it connects to the Gem.Bot Core and listens for the forwarded `heartbeat` messages, displaying them in the console to provide a real-time status overview of all connected agents.
+3.  **Панель Стратега (`strategist_panel/`)**: Клиент WebSocket, который служит командным центром для оператора-человека. В этом спринте он подключается к Ядру Gem.Bot и прослушивает пересылаемые `heartbeat`-сообщения, отображая их в консоли для предоставления обзора статуса всех подключенных агентов в реальном времени.
 
-## How to Run the System
+## Как запустить систему
 
-To test the "Nervous System," you need to run all three components simultaneously in separate terminal windows.
+Чтобы протестировать "Нервную систему", вам необходимо запустить все три компонента одновременно в разных окнах терминала.
 
-### Prerequisites
+### Предварительные требования
 
-First, install the necessary Python library:
+Сначала установите необходимую библиотеку Python:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 1: Start the Gem.Bot Core Server
+### Шаг 1: Запустите сервер Ядра Gem.Bot
 
-In your first terminal, navigate to the project root and run:
+В первом терминале перейдите в корневой каталог проекта и выполните:
 
 ```bash
 python gem_bot_core/main.py
 ```
 
-You should see a log message indicating the server has started, e.g., `INFO:root:Starting Gem.Bot Core WebSocket server on ws://localhost:8765`.
+Вы должны увидеть лог-сообщение, указывающее на запуск сервера, например: `INFO:root:Starting Gem.Bot Core WebSocket server on ws://localhost:8765`.
 
-### Step 2: Start the Strategist Panel
+### Шаг 2: Запустите Панель Стратега
 
-In a second terminal, run the Strategist Panel client:
+Во втором терминале запустите клиент Панели Стратега:
 
 ```bash
 python strategist_panel/main.py
 ```
 
-The panel will connect to the server and wait for messages. You will see a log confirming the connection.
+Панель подключится к серверу и будет ожидать сообщений. Вы увидите лог, подтверждающий подключение.
 
-### Step 3: Start the Oracle Agent
+### Шаг 3: Запустите Агента "Оракул"
 
-In a third terminal, run the Oracle Agent client:
+В третьем терминале запустите клиент Агента "Оракул":
 
 ```bash
 python oracle_agent/main.py
 ```
 
-The agent will connect to the server and begin sending a heartbeat every 5 seconds.
+Агент подключится к серверу и начнет отправлять heartbeat каждые 5 секунд.
 
-### Verification
+### Проверка
 
-Once the agent is running, you will see:
--   **In the Agent's terminal:** Log messages indicating that a heartbeat is being sent.
--   **In the Core's terminal:** Log messages showing it received a heartbeat and forwarded it.
--   **In the Panel's terminal:** A formatted printout of the heartbeat data, confirming that the entire communication loop is working.
+После запуска агента вы увидите:
+-   **В терминале Агента:** Лог-сообщения, указывающие на отправку heartbeat.
+-   **В терминале Ядра:** Лог-сообщения, показывающие, что ядро получило и переслало heartbeat.
+-   **В терминале Панели:** Отформатированный вывод данных heartbeat, подтверждающий, что весь коммуникационный цикл работает.
 
-You can start multiple instances of the `strategist_panel` or `oracle_agent` to see the server handle them correctly.
+Вы можете запустить несколько экземпляров `strategist_panel` или `oracle_agent`, чтобы увидеть, как сервер корректно их обрабатывает.
