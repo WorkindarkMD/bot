@@ -1,0 +1,155 @@
+:root {
+    --bg-color: #121212;
+    --primary-card-bg: #1e1e1e;
+    --secondary-card-bg: #2a2a2a;
+    --text-color: #e0e0e0;
+    --text-secondary-color: #b0b0b0;
+    --accent-color: #00bcd4;
+    --status-connected-color: #4caf50;
+    --status-disconnected-color: #f44336;
+    --signal-buy-color: #4caf50;
+    --signal-sell-color: #f44336;
+    --signal-hold-color: #ff9800;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-card-bg);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--accent-color);
+    font-weight: 300;
+}
+
+.status {
+    font-size: 1.1em;
+}
+
+#connection-status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status-connected {
+    color: var(--status-connected-color);
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.status-disconnected {
+    color: var(--status-disconnected-color);
+    background-color: rgba(244, 67, 54, 0.1);
+}
+
+.card {
+    background-color: var(--primary-card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-signal-card {
+    text-align: center;
+}
+
+.main-signal-card h2 {
+    margin-top: 0;
+    color: var(--text-secondary-color);
+    font-weight: 400;
+}
+
+#last-signal {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.signal-buy { color: var(--signal-buy-color); }
+.signal-sell { color: var(--signal-sell-color); }
+.signal-hold { color: var(--signal-hold-color); }
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.metric-card {
+    text-align: center;
+    background-color: var(--secondary-card-bg);
+}
+
+.metric-card h3 {
+    margin-top: 0;
+    color: var(--text-secondary-color);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.metric-card p {
+    font-size: 1.8em;
+    margin: 5px 0 0;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.log-card h2 {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.log-container {
+    height: 200px;
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    border: 1px solid var(--secondary-card-bg);
+}
+
+.log-container p {
+    margin: 0 0 5px;
+    padding: 0;
+    word-break: break-all;
+}
+
+/* Scrollbar styles */
+.log-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.log-container::-webkit-scrollbar-track {
+    background: var(--secondary-card-bg);
+}
+
+.log-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem.Bot - Strategist Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gem.Bot Strategist Panel</h1>
+            <div class="status">
+                <span>Core Connection:</span>
+                <span id="connection-status" class="status-disconnected">DISCONNECTED</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-signal-card card">
+                <h2>Last Signal</h2>
+                <p id="last-signal" class="signal-hold">--</p>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card card">
+                    <h3>WAP (Weighted Avg. Price)</h3>
+                    <p id="metric-wap">0.00</p>
+                </div>
+                <div class="metric-card card">
+                    <h3>Spread</h3>
+                    <p id="metric-spread">0.00</p>
+                </div>
+                <div class="metric-card card">
+                    <h3>Book Imbalance</h3>
+                    <p id="metric-imbalance">0.00</p>
+                </div>
+            </div>
+
+            <div class="log-card card">
+                <h2>Event Log</h2>
+                <div id="log-container" class="log-container">
+                    <!-- Log messages will be appended here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
