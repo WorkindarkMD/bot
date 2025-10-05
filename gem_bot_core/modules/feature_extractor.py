@@ -4,14 +4,14 @@ import time
 
 class FeatureExtractor:
     """
-    Извлекает микроструктурные признаки из рыночных данных в реальном времени.
-    Этот класс является stateful, он поддерживает актуальное состояние
-    книги заявок и недавних сделок.
+    Extracts microstructural features from real-time market data.
+    This class is stateful, maintaining the current state of the order book
+    and recent trades.
     """
     def __init__(self, max_trades=100):
         """
-        Инициализация FeatureExtractor.
-        :param max_trades: Количество последних сделок для хранения и анализа.
+        Initializes the FeatureExtractor.
+        :param max_trades: The number of recent trades to store and analyze.
         """
         self.order_book = {'bids': {}, 'asks': {}}
         self.last_update_ts = None
@@ -20,53 +20,61 @@ class FeatureExtractor:
 
     def update_order_book(self, data):
         """
-        Обновляет состояние книги заявок на основе данных от коннектора.
-        Обрабатывает как 'snapshot' (полный снимок), так и 'update' (инкрементальные изменения).
+        Updates the order book state from connector data.
+        Handles both 'snapshot' and 'update' actions.
         """
-        # Bitget сначала присылает snapshot, затем обновления
-        if data['action'] == 'snapshot':
-            # Преобразуем строки в float для вычислений
-            self.order_book['bids'] = {float(price): float(size) for price, size in data['data'][0]['bids']}
-            self.order_book['asks'] = {float(price): float(size) for price, size in data['data'][0]['asks']}
-        elif data['action'] == 'update':
+        action = data.get('action')
+        if not action or 'data' not in data or not data['data']:
+            return
+
+        book_data = data['data'][0]
+
+        if action == 'snapshot':
+            self.order_book['bids'] = {float(price): float(size) for price, size in book_data.get('bids', [])}
+            self.order_book['asks'] = {float(price): float(size) for price, size in book_data.get('asks', [])}
+        elif action == 'update':
             for side in ['bids', 'asks']:
-                for price, size in data['data'][0][side]:
+                for price, size in book_data.get(side, []):
                     price, size = float(price), float(size)
                     if size == 0:
-                        # Если размер 0, удаляем уровень цены
                         if price in self.order_book[side]:
                             del self.order_book[side][price]
                     else:
                         self.order_book[side][price] = size
 
-        self.last_update_ts = int(data['data'][0]['ts'])
+        self.last_update_ts = int(book_data.get('ts'))
 
     def add_trade(self, data):
         """
-        Добавляет новые сделки в очередь для анализа.
+        Adds new trades to the queue for analysis.
         """
-        for trade in data['data']:
-            ts, price, size, side = trade
+        trade_list = data.get('data', [])
+        if not trade_list:
+            return
+
+        for trade in trade_list:
+            # trade format: [timestamp, price, size, side]
             self.trades.append({
-                'ts': int(ts),
-                'price': float(price),
-                'size': float(size),
-                'side': side
+                'ts': int(trade[0]),
+                'price': float(trade[1]),
+                'size': float(trade[2]),
+                'side': trade[3]
             })
-        if data['data']:
-            self.last_trade_ts = int(data['data'][-1][0])
+        self.last_trade_ts = int(trade_list[-1][0])
 
     def extract_features(self):
         """
-        Извлекает и вычисляет набор микроструктурных признаков из текущего состояния.
-        :return: Словарь с признаками или None, если данных недостаточно.
+        Extracts and calculates a set of microstructural features from the current state.
+        :return: A dictionary of features, or None if data is insufficient.
         """
         if not self.order_book['bids'] or not self.order_book['asks']:
             return None
 
-        # Сортируем биды (desc) и аски (asc) для нахождения лучших цен
         sorted_bids = sorted(self.order_book['bids'].items(), key=lambda x: x[0], reverse=True)
         sorted_asks = sorted(self.order_book['asks'].items(), key=lambda x: x[0])
+
+        if not sorted_bids or not sorted_asks:
+            return None
 
         best_bid_price, best_bid_size = sorted_bids[0]
         best_ask_price, best_ask_size = sorted_asks[0]
@@ -74,22 +82,22 @@ class FeatureExtractor:
         # 1. Bid-Ask Spread
         spread = best_ask_price - best_bid_price
 
-        # 2. Mid-Price (Средняя цена)
+        # 2. Mid-Price
         mid_price = (best_ask_price + best_bid_price) / 2
 
-        # 3. Weighted Average Price (WAP) - Средневзвешенная цена
-        wap = (best_bid_price * best_ask_size + best_ask_price * best_bid_size) / (best_bid_size + best_ask_size)
+        # 3. Weighted Average Price (WAP)
+        wap = (best_bid_price * best_ask_size + best_ask_price * best_bid_size) / (best_bid_size + best_ask_size) if (best_bid_size + best_ask_size) > 0 else mid_price
 
-        # 4. Book Imbalance (Дисбаланс книги заявок по 5 уровням)
-        bid_depth = sum(size for price, size in sorted_bids[:5])
-        ask_depth = sum(size for price, size in sorted_asks[:5])
+        # 4. Book Imbalance (5 levels)
+        bid_depth = sum(size for _, size in sorted_bids[:5])
+        ask_depth = sum(size for _, size in sorted_asks[:5])
         book_imbalance = (bid_depth - ask_depth) / (bid_depth + ask_depth) if (bid_depth + ask_depth) > 0 else 0
 
-        # 5. Trade Imbalance (Дисбаланс по сделкам)
+        # 5. Trade Imbalance
         buy_volume = sum(t['size'] for t in self.trades if t['side'] == 'buy')
         sell_volume = sum(t['size'] for t in self.trades if t['side'] == 'sell')
-        total_volume = buy_volume + sell_volume
-        trade_imbalance = (buy_volume - sell_volume) / total_volume if total_volume > 0 else 0
+        total_trade_volume = buy_volume + sell_volume
+        trade_imbalance = (buy_volume - sell_volume) / total_trade_volume if total_trade_volume > 0 else 0
 
         features = {
             'timestamp': time.time(),

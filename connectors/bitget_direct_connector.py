@@ -2,18 +2,19 @@ import asyncio
 import websockets
 import json
 import logging
+import time
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# As per the official Bitget documentation for Spot WebSocket
 BITGET_WS_URL = "wss://ws.bitget.com/spot/v1/stream"
 
 class BitgetDirectConnector:
     """
     A direct, robust, and integratable WebSocket connector for Bitget,
-    written from scratch using the 'websockets' library.
+    written from scratch using the 'websockets' library. This version includes
+    proper ping/pong handling and a flexible subscription mechanism.
     """
     def __init__(self, symbols: list, channels: list, on_message_callback: callable):
         """
@@ -38,22 +39,17 @@ class BitgetDirectConnector:
         while self._is_running:
             try:
                 logger.info(f"Connector: Connecting to {self.ws_url}...")
-                async with websockets.connect(self.ws_url, ping_interval=None) as ws:
+                async with websockets.connect(self.ws_url, ping_interval=25) as ws:
                     self.websocket = ws
                     logger.info("Connector: Bitget connection established.")
                     await self._subscribe()
 
-                    consumer_task = asyncio.create_task(self._message_consumer())
-                    pinger_task = asyncio.create_task(self._ping_handler())
-
-                    # Wait for either task to complete (which indicates a disconnect)
-                    done, pending = await asyncio.wait(
-                        {consumer_task, pinger_task},
-                        return_when=asyncio.FIRST_COMPLETED
-                    )
-
-                    for task in pending:
-                        task.cancel()
+                    # This loop will now primarily handle incoming messages
+                    async for message in self.websocket:
+                        if message == "pong":
+                            logger.debug("Pong received")
+                            continue
+                        await self.on_message_callback(message)
 
             except (websockets.exceptions.ConnectionClosed, ConnectionRefusedError) as e:
                 logger.error(f"Connector: Connection closed/refused: {e}. Reconnecting in 5 seconds...")
@@ -75,26 +71,6 @@ class BitgetDirectConnector:
         await self.websocket.send(json.dumps(subscription_payload))
         logger.info(f"Connector: Subscription message sent: {subscription_payload}")
 
-    async def _message_consumer(self):
-        """Consumes messages and forwards them via the callback."""
-        try:
-            async for message in self.websocket:
-                if message == "pong":
-                    continue
-                await self.on_message_callback(message)
-        except websockets.exceptions.ConnectionClosed:
-            logger.info("Connector: Consumer task stopped due to connection closure.")
-
-    async def _ping_handler(self):
-        """Sends a 'ping' message every 25 seconds to keep the connection alive."""
-        while True:
-            try:
-                await asyncio.sleep(25)
-                await self.websocket.ping()
-            except websockets.exceptions.ConnectionClosed:
-                logger.info("Connector: Pinger task stopped.")
-                break
-
     def start(self):
         """Starts the connector in a background task."""
         if not self._is_running:
@@ -112,18 +88,35 @@ class BitgetDirectConnector:
 
 # --- Test Block ---
 if __name__ == '__main__':
+    # This block allows for isolated testing of the connector.
+    # It will connect to Bitget, subscribe to channels, print messages for 30 seconds, and then disconnect.
+
+    # A simple async function to handle incoming messages for the test
     async def test_handler(msg):
-        print(f"DATA RECEIVED: {msg}")
+        print(f"DATA RECEIVED: {msg[:200]}...") # Print first 200 chars
 
     async def main_test():
-        logger.info("--- Testing Direct Bitget Connector (From Scratch) ---")
-        connector = BitgetDirectConnector(on_message_callback=test_handler)
+        logger.info("--- Testing BitgetDirectConnector ---")
+
+        # Instantiate the connector with test parameters
+        connector = BitgetDirectConnector(
+            symbols=["BTCUSDT"],
+            channels=["trade", "books"],
+            on_message_callback=test_handler
+        )
+
+        # Start the connector
         connector.start()
+
         try:
-            await asyncio.sleep(60)
+            # Let it run for 30 seconds to receive some data
+            await asyncio.sleep(30)
         finally:
+            # Gracefully stop the connector
             logger.info("Test finished. Stopping connector.")
             connector.stop()
+            # Allow time for cleanup
+            await asyncio.sleep(1)
 
     try:
         asyncio.run(main_test())
