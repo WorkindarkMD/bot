@@ -1,86 +1,146 @@
 import asyncio
-import websockets
 import json
 import logging
-from datetime import datetime
+import websockets
+from websockets.server import WebSocketServerProtocol
+from websockets.exceptions import ConnectionClosed
+import sys
+from pathlib import Path
+from typing import Set
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+from gem_bot_core.modules.feature_extractor import FeatureExtractor
+from gem_bot_core.modules.prediction_simulator import PredictionSimulator
 
-# Sets to store connected clients
-ORACLE_AGENTS = set()
-STRATEGIST_PANELS = set()
+# --- Configuration ---
+ORACLE_PORT = 8765
+STRATEGIST_PORT = 8766
+PROCESSING_INTERVAL_SECONDS = 1
+LOG_LEVEL = logging.INFO
 
-async def register_client(websocket):
+# --- Logging Setup ---
+logging.basicConfig(level=LOG_LEVEL, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger("GemBotCore")
+
+
+class GemBotCore:
     """
-    Registers a new client, identifying them as an Oracle Agent or a Strategist Panel.
+    Центральное ядро AI. Принимает данные от агентов "Оракул",
+    обрабатывает их и транслирует результаты в "Панель Стратега".
     """
-    try:
-        # The first message from a client should be its identification
-        identity = await websocket.recv()
-        if identity == "oracle":
-            ORACLE_AGENTS.add(websocket)
-            logging.info(f"Oracle Agent connected: {websocket.remote_address}")
-        elif identity == "strategist":
-            STRATEGIST_PANELS.add(websocket)
-            logging.info(f"Strategist Panel connected: {websocket.remote_address}")
-        else:
-            logging.warning(f"Unknown client type connected: {identity}. Disconnecting.")
-            await websocket.close()
-            return False
-        return True
-    except websockets.exceptions.ConnectionClosed:
-        logging.info("Client disconnected during registration.")
-        return False
+    def __init__(self):
+        self.feature_extractor = FeatureExtractor()
+        self.prediction_simulator = PredictionSimulator()
+        self.oracle_clients: Set[WebSocketServerProtocol] = set()
+        self.strategist_clients: Set[WebSocketServerProtocol] = set()
+        self._running = True
 
-async def unregister_client(websocket):
-    """
-    Unregisters a client upon disconnection.
-    """
-    if websocket in ORACLE_AGENTS:
-        ORACLE_AGENTS.remove(websocket)
-        logging.info(f"Oracle Agent disconnected: {websocket.remote_address}")
-    elif websocket in STRATEGIST_PANELS:
-        STRATEGIST_PANELS.remove(websocket)
-        logging.info(f"Strategist Panel disconnected: {websocket.remote_address}")
+    async def handle_oracle_connection(self, websocket: WebSocketServerProtocol, path: str):
+        """Обрабатывает входящие соединения от агентов 'Оракул'."""
+        self.oracle_clients.add(websocket)
+        logger.info(f"Агент 'Оракул' подключился: {websocket.remote_address}")
+        try:
+            async for message in websocket:
+                try:
+                    data = json.loads(message)
+                    # Определяем тип данных и обновляем соответствующий модуль
+                    if 'arg' in data and data['arg'].get('channel') == 'books':
+                        self.feature_extractor.update_order_book(data)
+                    elif 'arg' in data and data['arg'].get('channel') == 'trade':
+                        self.feature_extractor.add_trade(data)
+                    else:
+                        # Обработка других типов сообщений, например, подтверждение подписки
+                        logger.debug(f"Получено сервисное сообщение от Оракула: {message[:150]}")
 
-async def message_handler(websocket):
-    """
-    Handles incoming messages from all clients.
-    """
-    is_registered = await register_client(websocket)
-    if not is_registered:
-        return
+                except json.JSONDecodeError:
+                    logger.warning(f"Получено некорректное JSON-сообщение от Оракула: {message}")
+                except Exception as e:
+                    logger.error(f"Ошибка при обработке сообщения от Оракула: {e}")
+        except ConnectionClosed:
+            logger.info(f"Агент 'Оракул' отключился: {websocket.remote_address}")
+        finally:
+            self.oracle_clients.remove(websocket)
 
-    try:
-        # Listen for messages from Oracle Agents
-        async for message in websocket:
-            if websocket in ORACLE_AGENTS:
-                logging.info(f"Received heartbeat from Oracle Agent: {message}")
+    async def handle_strategist_connection(self, websocket: WebSocketServerProtocol, path: str):
+        """Обрабатывает входящие соединения от 'Панели Стратега'."""
+        self.strategist_clients.add(websocket)
+        logger.info(f"Стратег подключился: {websocket.remote_address}")
+        try:
+            # Держим соединение открытым, но не ожидаем сообщений от стратега в этой версии
+            await websocket.wait_closed()
+        except ConnectionClosed:
+            logger.info(f"Стратег отключился: {websocket.remote_address}")
+        finally:
+            self.strategist_clients.remove(websocket)
 
-                # Forward the message to all Strategist Panels
-                if STRATEGIST_PANELS:
-                    # Use asyncio.gather to send messages concurrently
-                    await asyncio.gather(*[panel.send(message) for panel in STRATEGIST_PANELS])
-                    logging.info(f"Forwarded heartbeat to {len(STRATEGIST_PANELS)} Strategist Panel(s).")
+    async def broadcast_to_strategists(self, message: str):
+        """Отправляет сообщение всем подключенным стратегам."""
+        if not self.strategist_clients:
+            return
+        # Используем asyncio.gather для параллельной отправки
+        await asyncio.gather(
+            *[client.send(message) for client in self.strategist_clients]
+        )
 
-    except websockets.exceptions.ConnectionClosedError:
-        logging.info(f"Connection closed with error for client: {websocket.remote_address}")
-    except Exception as e:
-        logging.error(f"An unexpected error occurred with client {websocket.remote_address}: {e}")
-    finally:
-        await unregister_client(websocket)
+    async def processing_loop(self):
+        """
+        Основной цикл обработки данных и генерации сигналов.
+        """
+        logger.info("Запуск основного цикла обработки...")
+        while self._running:
+            await asyncio.sleep(PROCESSING_INTERVAL_SECONDS)
+            try:
+                # 1. Извлечь признаки
+                features = self.feature_extractor.extract_features()
+                if features is None:
+                    logger.debug("Недостаточно данных для извлечения признаков.")
+                    continue
+
+                # 2. Получить предсказание
+                prediction = self.prediction_simulator.get_prediction(features)
+
+                # 3. Сформировать и отправить результат
+                result = {
+                    'type': 'core_update',
+                    'features': features,
+                    'prediction': prediction
+                }
+
+                # Сериализуем в JSON и транслируем стратегам
+                await self.broadcast_to_strategists(json.dumps(result))
+                logger.info(f"Сгенерирован и отправлен сигнал: {prediction}, WAP: {features.get('wap', 'N/A'):.2f}")
+
+            except Exception as e:
+                logger.error(f"Ошибка в цикле обработки: {e}")
+
+    async def start(self):
+        """Запускает все компоненты ядра."""
+        logger.info(f"Запуск сервера для Оракулов на порту {ORACLE_PORT}...")
+        oracle_server = await websockets.serve(self.handle_oracle_connection, "localhost", ORACLE_PORT)
+
+        logger.info(f"Запуск сервера для Стратегов на порту {STRATEGIST_PORT}...")
+        strategist_server = await websockets.serve(self.handle_strategist_connection, "localhost", STRATEGIST_PORT)
+
+        processing_task = asyncio.create_task(self.processing_loop())
+
+        await asyncio.gather(processing_task)
+
+    def stop(self):
+        self._running = False
+
 
 async def main():
-    host = "localhost"
-    port = 8765
-    logging.info(f"Starting Gem.Bot Core WebSocket server on ws://{host}:{port}")
+    core = GemBotCore()
+    try:
+        await core.start()
+    except asyncio.CancelledError:
+        logger.info("Задача ядра была отменена.")
+    finally:
+        core.stop()
+        logger.info("Ядро Gem.Bot было остановлено.")
 
-    async with websockets.serve(message_handler, host, port):
-        await asyncio.Future()  # Run forever
 
 if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logging.info("Server is shutting down.")
+        print("Остановка по требованию пользователя.")

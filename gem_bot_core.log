@@ -1,0 +1,1807 @@
+/app/gem_bot_core/main.py:5: DeprecationWarning: websockets.server.WebSocketServerProtocol is deprecated
+  from websockets.server import WebSocketServerProtocol
+2025-10-04 21:57:50,331 - GemBotCore - INFO - Запуск сервера для Оракулов на порту 8765...
+2025-10-04 21:57:50,341 - websockets.server - INFO - server listening on 127.0.0.1:8765
+2025-10-04 21:57:50,341 - GemBotCore - INFO - Запуск сервера для Стратегов на порту 8766...
+2025-10-04 21:57:50,342 - websockets.server - INFO - server listening on 127.0.0.1:8766
+2025-10-04 21:57:50,342 - GemBotCore - INFO - Запуск основного цикла обработки...
+2025-10-04 21:57:55,226 - websockets.server - INFO - connection open
+2025-10-04 21:57:55,226 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:56,290 - websockets.server - INFO - connection open
+2025-10-04 21:57:56,291 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:56,433 - websockets.server - INFO - connection open
+2025-10-04 21:57:56,433 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:56,570 - websockets.server - INFO - connection open
+2025-10-04 21:57:56,570 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:56,608 - websockets.server - INFO - connection open
+2025-10-04 21:57:56,608 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:56,809 - websockets.server - INFO - connection open
+2025-10-04 21:57:56,810 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:57,011 - websockets.server - INFO - connection open
+2025-10-04 21:57:57,012 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:57,212 - websockets.server - INFO - connection open
+2025-10-04 21:57:57,213 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:57,387 - websockets.server - INFO - connection open
+2025-10-04 21:57:57,388 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:57,412 - websockets.server - INFO - connection open
+2025-10-04 21:57:57,413 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:57,614 - websockets.server - INFO - connection open
+2025-10-04 21:57:57,614 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:57,814 - websockets.server - INFO - connection open
+2025-10-04 21:57:57,814 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:58,017 - websockets.server - INFO - connection open
+2025-10-04 21:57:58,017 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:58,216 - websockets.server - INFO - connection open
+2025-10-04 21:57:58,217 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:58,419 - websockets.server - INFO - connection open
+2025-10-04 21:57:58,419 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:58,619 - websockets.server - INFO - connection open
+2025-10-04 21:57:58,619 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:58,818 - websockets.server - INFO - connection open
+2025-10-04 21:57:58,818 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:59,021 - websockets.server - INFO - connection open
+2025-10-04 21:57:59,022 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:59,223 - websockets.server - INFO - connection open
+2025-10-04 21:57:59,223 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:59,425 - websockets.server - INFO - connection open
+2025-10-04 21:57:59,425 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:59,623 - websockets.server - INFO - connection open
+2025-10-04 21:57:59,623 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:59,682 - websockets.server - INFO - connection open
+2025-10-04 21:57:59,682 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:57:59,823 - websockets.server - INFO - connection open
+2025-10-04 21:57:59,823 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:00,029 - websockets.server - INFO - connection open
+2025-10-04 21:58:00,030 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:00,230 - websockets.server - INFO - connection open
+2025-10-04 21:58:00,230 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:00,430 - websockets.server - INFO - connection open
+2025-10-04 21:58:00,430 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:00,629 - websockets.server - INFO - connection open
+2025-10-04 21:58:00,629 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:00,830 - websockets.server - INFO - connection open
+2025-10-04 21:58:00,830 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:01,031 - websockets.server - INFO - connection open
+2025-10-04 21:58:01,031 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:01,231 - websockets.server - INFO - connection open
+2025-10-04 21:58:01,232 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:01,432 - websockets.server - INFO - connection open
+2025-10-04 21:58:01,433 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:01,636 - websockets.server - INFO - connection open
+2025-10-04 21:58:01,636 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:01,677 - websockets.server - INFO - connection open
+2025-10-04 21:58:01,677 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:01,837 - websockets.server - INFO - connection open
+2025-10-04 21:58:01,837 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:02,036 - websockets.server - INFO - connection open
+2025-10-04 21:58:02,037 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:02,237 - websockets.server - INFO - connection open
+2025-10-04 21:58:02,237 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:02,437 - websockets.server - INFO - connection open
+2025-10-04 21:58:02,438 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:02,637 - websockets.server - INFO - connection open
+2025-10-04 21:58:02,637 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:02,839 - websockets.server - INFO - connection open
+2025-10-04 21:58:02,839 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:03,040 - websockets.server - INFO - connection open
+2025-10-04 21:58:03,041 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:03,240 - websockets.server - INFO - connection open
+2025-10-04 21:58:03,240 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:03,443 - websockets.server - INFO - connection open
+2025-10-04 21:58:03,443 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:03,645 - websockets.server - INFO - connection open
+2025-10-04 21:58:03,645 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:03,848 - websockets.server - INFO - connection open
+2025-10-04 21:58:03,848 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:04,049 - websockets.server - INFO - connection open
+2025-10-04 21:58:04,049 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:04,249 - websockets.server - INFO - connection open
+2025-10-04 21:58:04,250 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:04,450 - websockets.server - INFO - connection open
+2025-10-04 21:58:04,450 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:04,455 - websockets.server - INFO - connection open
+2025-10-04 21:58:04,455 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:04,649 - websockets.server - INFO - connection open
+2025-10-04 21:58:04,649 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:04,849 - websockets.server - INFO - connection open
+2025-10-04 21:58:04,850 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,029 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,029 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,052 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,052 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,253 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,254 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,462 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,462 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,662 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,662 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,863 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,863 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:05,957 - websockets.server - INFO - connection open
+2025-10-04 21:58:05,957 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:06,062 - websockets.server - INFO - connection open
+2025-10-04 21:58:06,063 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:06,262 - websockets.server - INFO - connection open
+2025-10-04 21:58:06,263 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:06,467 - websockets.server - INFO - connection open
+2025-10-04 21:58:06,467 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:06,484 - websockets.server - INFO - connection open
+2025-10-04 21:58:06,484 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:06,668 - websockets.server - INFO - connection open
+2025-10-04 21:58:06,668 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:06,868 - websockets.server - INFO - connection open
+2025-10-04 21:58:06,868 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:07,070 - websockets.server - INFO - connection open
+2025-10-04 21:58:07,070 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:07,271 - websockets.server - INFO - connection open
+2025-10-04 21:58:07,271 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:07,474 - websockets.server - INFO - connection open
+2025-10-04 21:58:07,475 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:07,675 - websockets.server - INFO - connection open
+2025-10-04 21:58:07,675 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:07,883 - websockets.server - INFO - connection open
+2025-10-04 21:58:07,883 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,085 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,085 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,253 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,253 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,287 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,288 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,485 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,485 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,608 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,608 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,623 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,623 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,686 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,686 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:08,885 - websockets.server - INFO - connection open
+2025-10-04 21:58:08,886 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:09,087 - websockets.server - INFO - connection open
+2025-10-04 21:58:09,087 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:09,293 - websockets.server - INFO - connection open
+2025-10-04 21:58:09,293 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:09,494 - websockets.server - INFO - connection open
+2025-10-04 21:58:09,495 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:09,652 - websockets.server - INFO - connection open
+2025-10-04 21:58:09,652 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:09,698 - websockets.server - INFO - connection open
+2025-10-04 21:58:09,698 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:09,912 - websockets.server - INFO - connection open
+2025-10-04 21:58:09,912 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,113 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,113 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,234 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,234 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_strategist_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,306 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,306 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,505 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,506 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,674 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,674 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,708 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,708 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:10,908 - websockets.server - INFO - connection open
+2025-10-04 21:58:10,908 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:11,111 - websockets.server - INFO - connection open
+2025-10-04 21:58:11,111 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:11,196 - websockets.server - INFO - connection open
+2025-10-04 21:58:11,196 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:11,312 - websockets.server - INFO - connection open
+2025-10-04 21:58:11,312 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:11,511 - websockets.server - INFO - connection open
+2025-10-04 21:58:11,511 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:11,711 - websockets.server - INFO - connection open
+2025-10-04 21:58:11,711 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:11,914 - websockets.server - INFO - connection open
+2025-10-04 21:58:11,915 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:12,115 - websockets.server - INFO - connection open
+2025-10-04 21:58:12,115 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:12,317 - websockets.server - INFO - connection open
+2025-10-04 21:58:12,317 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:12,519 - websockets.server - INFO - connection open
+2025-10-04 21:58:12,519 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:12,719 - websockets.server - INFO - connection open
+2025-10-04 21:58:12,720 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:12,906 - websockets.server - INFO - connection open
+2025-10-04 21:58:12,906 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:12,920 - websockets.server - INFO - connection open
+2025-10-04 21:58:12,921 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,122 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,122 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,296 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,296 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,325 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,325 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,436 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,436 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,524 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,525 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,726 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,726 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:13,931 - websockets.server - INFO - connection open
+2025-10-04 21:58:13,931 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:14,131 - websockets.server - INFO - connection open
+2025-10-04 21:58:14,131 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:14,332 - websockets.server - INFO - connection open
+2025-10-04 21:58:14,332 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:14,532 - websockets.server - INFO - connection open
+2025-10-04 21:58:14,532 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:14,647 - websockets.server - INFO - connection open
+2025-10-04 21:58:14,647 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:14,732 - websockets.server - INFO - connection open
+2025-10-04 21:58:14,732 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:14,934 - websockets.server - INFO - connection open
+2025-10-04 21:58:14,934 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,102 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,102 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,139 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,140 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,244 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,244 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_strategist_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,344 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,344 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,544 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,544 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,746 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,746 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:15,944 - websockets.server - INFO - connection open
+2025-10-04 21:58:15,944 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:16,149 - websockets.server - INFO - connection open
+2025-10-04 21:58:16,149 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:16,353 - websockets.server - INFO - connection open
+2025-10-04 21:58:16,354 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:16,556 - websockets.server - INFO - connection open
+2025-10-04 21:58:16,557 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:16,756 - websockets.server - INFO - connection open
+2025-10-04 21:58:16,756 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:16,965 - websockets.server - INFO - connection open
+2025-10-04 21:58:16,965 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:17,118 - websockets.server - INFO - connection open
+2025-10-04 21:58:17,118 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:17,167 - websockets.server - INFO - connection open
+2025-10-04 21:58:17,167 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:17,366 - websockets.server - INFO - connection open
+2025-10-04 21:58:17,366 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:17,567 - websockets.server - INFO - connection open
+2025-10-04 21:58:17,567 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:17,768 - websockets.server - INFO - connection open
+2025-10-04 21:58:17,769 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:17,973 - websockets.server - INFO - connection open
+2025-10-04 21:58:17,973 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:18,179 - websockets.server - INFO - connection open
+2025-10-04 21:58:18,179 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:18,376 - websockets.server - INFO - connection open
+2025-10-04 21:58:18,376 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:18,574 - websockets.server - INFO - connection open
+2025-10-04 21:58:18,575 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:18,775 - websockets.server - INFO - connection open
+2025-10-04 21:58:18,775 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:18,976 - websockets.server - INFO - connection open
+2025-10-04 21:58:18,977 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,125 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,126 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,178 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,179 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,381 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,381 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,475 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,476 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,582 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,582 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,782 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,782 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:19,983 - websockets.server - INFO - connection open
+2025-10-04 21:58:19,983 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:20,025 - websockets.server - INFO - connection open
+2025-10-04 21:58:20,026 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:20,184 - websockets.server - INFO - connection open
+2025-10-04 21:58:20,184 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:20,254 - websockets.server - INFO - connection open
+2025-10-04 21:58:20,254 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_strategist_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:20,384 - websockets.server - INFO - connection open
+2025-10-04 21:58:20,384 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:20,584 - websockets.server - INFO - connection open
+2025-10-04 21:58:20,584 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:20,801 - websockets.server - INFO - connection open
+2025-10-04 21:58:20,801 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:21,001 - websockets.server - INFO - connection open
+2025-10-04 21:58:21,001 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:21,201 - websockets.server - INFO - connection open
+2025-10-04 21:58:21,202 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:21,331 - websockets.server - INFO - connection open
+2025-10-04 21:58:21,331 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:21,401 - websockets.server - INFO - connection open
+2025-10-04 21:58:21,402 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:21,602 - websockets.server - INFO - connection open
+2025-10-04 21:58:21,603 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:21,807 - websockets.server - INFO - connection open
+2025-10-04 21:58:21,807 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:22,011 - websockets.server - INFO - connection open
+2025-10-04 21:58:22,012 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:22,212 - websockets.server - INFO - connection open
+2025-10-04 21:58:22,213 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:22,413 - websockets.server - INFO - connection open
+2025-10-04 21:58:22,413 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:22,612 - websockets.server - INFO - connection open
+2025-10-04 21:58:22,612 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:22,815 - websockets.server - INFO - connection open
+2025-10-04 21:58:22,815 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:23,016 - websockets.server - INFO - connection open
+2025-10-04 21:58:23,016 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:23,217 - websockets.server - INFO - connection open
+2025-10-04 21:58:23,218 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:23,390 - websockets.server - INFO - connection open
+2025-10-04 21:58:23,390 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:23,417 - websockets.server - INFO - connection open
+2025-10-04 21:58:23,417 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:23,617 - websockets.server - INFO - connection open
+2025-10-04 21:58:23,617 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:23,817 - websockets.server - INFO - connection open
+2025-10-04 21:58:23,817 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:24,018 - websockets.server - INFO - connection open
+2025-10-04 21:58:24,019 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:24,222 - websockets.server - INFO - connection open
+2025-10-04 21:58:24,222 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:24,422 - websockets.server - INFO - connection open
+2025-10-04 21:58:24,422 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:24,622 - websockets.server - INFO - connection open
+2025-10-04 21:58:24,622 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:24,824 - websockets.server - INFO - connection open
+2025-10-04 21:58:24,824 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,026 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,027 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,227 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,228 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,264 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,264 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_strategist_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,427 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,428 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,473 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,474 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,630 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,630 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:25,830 - websockets.server - INFO - connection open
+2025-10-04 21:58:25,830 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:26,033 - websockets.server - INFO - connection open
+2025-10-04 21:58:26,033 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:26,234 - websockets.server - INFO - connection open
+2025-10-04 21:58:26,234 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:26,337 - websockets.server - INFO - connection open
+2025-10-04 21:58:26,338 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:26,436 - websockets.server - INFO - connection open
+2025-10-04 21:58:26,437 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:26,637 - websockets.server - INFO - connection open
+2025-10-04 21:58:26,637 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:26,838 - websockets.server - INFO - connection open
+2025-10-04 21:58:26,838 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:27,038 - websockets.server - INFO - connection open
+2025-10-04 21:58:27,038 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:27,241 - websockets.server - INFO - connection open
+2025-10-04 21:58:27,241 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:27,443 - websockets.server - INFO - connection open
+2025-10-04 21:58:27,443 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:27,513 - websockets.server - INFO - connection open
+2025-10-04 21:58:27,513 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:27,652 - websockets.server - INFO - connection open
+2025-10-04 21:58:27,652 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:27,850 - websockets.server - INFO - connection open
+2025-10-04 21:58:27,851 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:28,050 - websockets.server - INFO - connection open
+2025-10-04 21:58:28,050 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:28,250 - websockets.server - INFO - connection open
+2025-10-04 21:58:28,251 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:28,454 - websockets.server - INFO - connection open
+2025-10-04 21:58:28,454 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:28,653 - websockets.server - INFO - connection open
+2025-10-04 21:58:28,653 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:28,855 - websockets.server - INFO - connection open
+2025-10-04 21:58:28,855 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:29,062 - websockets.server - INFO - connection open
+2025-10-04 21:58:29,062 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:29,260 - websockets.server - INFO - connection open
+2025-10-04 21:58:29,261 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:29,462 - websockets.server - INFO - connection open
+2025-10-04 21:58:29,462 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:29,651 - websockets.server - INFO - connection open
+2025-10-04 21:58:29,652 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:29,662 - websockets.server - INFO - connection open
+2025-10-04 21:58:29,662 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:29,868 - websockets.server - INFO - connection open
+2025-10-04 21:58:29,868 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:30,069 - websockets.server - INFO - connection open
+2025-10-04 21:58:30,069 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:30,269 - websockets.server - INFO - connection open
+2025-10-04 21:58:30,269 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:30,273 - websockets.server - INFO - connection open
+2025-10-04 21:58:30,274 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_strategist_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:30,469 - websockets.server - INFO - connection open
+2025-10-04 21:58:30,469 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:30,669 - websockets.server - INFO - connection open
+2025-10-04 21:58:30,669 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:30,870 - websockets.server - INFO - connection open
+2025-10-04 21:58:30,871 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:31,071 - websockets.server - INFO - connection open
+2025-10-04 21:58:31,071 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:31,271 - websockets.server - INFO - connection open
+2025-10-04 21:58:31,271 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:31,471 - websockets.server - INFO - connection open
+2025-10-04 21:58:31,471 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:31,670 - websockets.server - INFO - connection open
+2025-10-04 21:58:31,670 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:31,872 - websockets.server - INFO - connection open
+2025-10-04 21:58:31,873 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:32,079 - websockets.server - INFO - connection open
+2025-10-04 21:58:32,079 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:32,277 - websockets.server - INFO - connection open
+2025-10-04 21:58:32,278 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:32,477 - websockets.server - INFO - connection open
+2025-10-04 21:58:32,477 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:32,678 - websockets.server - INFO - connection open
+2025-10-04 21:58:32,678 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:32,884 - websockets.server - INFO - connection open
+2025-10-04 21:58:32,885 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:33,079 - websockets.server - INFO - connection open
+2025-10-04 21:58:33,079 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:33,279 - websockets.server - INFO - connection open
+2025-10-04 21:58:33,279 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:33,479 - websockets.server - INFO - connection open
+2025-10-04 21:58:33,479 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:33,680 - websockets.server - INFO - connection open
+2025-10-04 21:58:33,680 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:33,724 - websockets.server - INFO - connection open
+2025-10-04 21:58:33,724 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:33,879 - websockets.server - INFO - connection open
+2025-10-04 21:58:33,879 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:34,079 - websockets.server - INFO - connection open
+2025-10-04 21:58:34,080 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:34,278 - websockets.server - INFO - connection open
+2025-10-04 21:58:34,279 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:34,480 - websockets.server - INFO - connection open
+2025-10-04 21:58:34,480 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:34,614 - websockets.server - INFO - connection open
+2025-10-04 21:58:34,614 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:34,680 - websockets.server - INFO - connection open
+2025-10-04 21:58:34,680 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:34,879 - websockets.server - INFO - connection open
+2025-10-04 21:58:34,880 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:35,083 - websockets.server - INFO - connection open
+2025-10-04 21:58:35,083 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:35,282 - websockets.server - INFO - connection open
+2025-10-04 21:58:35,282 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:35,284 - websockets.server - INFO - connection open
+2025-10-04 21:58:35,284 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_strategist_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:35,483 - websockets.server - INFO - connection open
+2025-10-04 21:58:35,484 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:35,683 - websockets.server - INFO - connection open
+2025-10-04 21:58:35,683 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:35,882 - websockets.server - INFO - connection open
+2025-10-04 21:58:35,882 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:36,083 - websockets.server - INFO - connection open
+2025-10-04 21:58:36,083 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:36,115 - websockets.server - INFO - connection open
+2025-10-04 21:58:36,115 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:36,283 - websockets.server - INFO - connection open
+2025-10-04 21:58:36,283 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:36,485 - websockets.server - INFO - connection open
+2025-10-04 21:58:36,486 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:36,683 - websockets.server - INFO - connection open
+2025-10-04 21:58:36,683 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:36,884 - websockets.server - INFO - connection open
+2025-10-04 21:58:36,884 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:37,084 - websockets.server - INFO - connection open
+2025-10-04 21:58:37,085 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:37,089 - websockets.server - INFO - connection open
+2025-10-04 21:58:37,090 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:37,284 - websockets.server - INFO - connection open
+2025-10-04 21:58:37,285 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:37,484 - websockets.server - INFO - connection open
+2025-10-04 21:58:37,484 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:37,687 - websockets.server - INFO - connection open
+2025-10-04 21:58:37,687 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:37,885 - websockets.server - INFO - connection open
+2025-10-04 21:58:37,886 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:38,089 - websockets.server - INFO - connection open
+2025-10-04 21:58:38,089 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:38,291 - websockets.server - INFO - connection open
+2025-10-04 21:58:38,291 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:38,342 - websockets.server - INFO - connection open
+2025-10-04 21:58:38,342 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:38,488 - websockets.server - INFO - connection open
+2025-10-04 21:58:38,488 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:38,688 - websockets.server - INFO - connection open
+2025-10-04 21:58:38,688 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:38,888 - websockets.server - INFO - connection open
+2025-10-04 21:58:38,889 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:39,090 - websockets.server - INFO - connection open
+2025-10-04 21:58:39,090 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:39,292 - websockets.server - INFO - connection open
+2025-10-04 21:58:39,292 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:39,491 - websockets.server - INFO - connection open
+2025-10-04 21:58:39,491 - websockets.server - ERROR - connection handler failed
+Traceback (most recent call last):
+  File "/home/jules/.pyenv/versions/3.12.11/lib/python3.12/site-packages/websockets/asyncio/server.py", line 376, in conn_handler
+    await self.handler(connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GemBotCore.handle_oracle_connection() missing 1 required positional argument: 'path'
+2025-10-04 21:58:39,693 - websockets.server - INFO - connection open

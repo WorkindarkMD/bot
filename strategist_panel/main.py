@@ -3,47 +3,68 @@ import websockets
 import json
 import logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# --- Configuration ---
+CORE_WS_URL = "ws://localhost:8766"
+LOG_LEVEL = logging.INFO
 
-SERVER_URI = "ws://localhost:8765"
+# --- Logging Setup ---
+logging.basicConfig(level=LOG_LEVEL, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger("StrategistPanel")
 
-async def listen_for_updates():
+async def listen_to_core():
     """
-    Connects to the Gem.Bot Core server and listens for incoming messages.
+    Подключается к ядру Gem.Bot и слушает обновления.
     """
+    logger.info("Панель Стратега запущена.")
     while True:
         try:
-            async with websockets.connect(SERVER_URI) as websocket:
-                logging.info(f"Connected to Gem.Bot Core at {SERVER_URI}")
-
-                # First, identify this client as a Strategist Panel
-                await websocket.send("strategist")
-                logging.info("Identified as a Strategist Panel. Awaiting heartbeats...")
-
-                # Listen for messages from the server
-                async for message in websocket:
+            async with websockets.connect(CORE_WS_URL) as websocket:
+                logger.info(f"Установлено соединение с ядром Gem.Bot по адресу {CORE_WS_URL}")
+                while True:
+                    message = await websocket.recv()
                     try:
                         data = json.loads(message)
-                        logging.info("--- Heartbeat Received ---")
-                        logging.info(f"  Agent ID:    {data.get('agent_id', 'N/A')}")
-                        logging.info(f"  Timestamp:   {data.get('timestamp', 'N/A')}")
-                        logging.info(f"  Status:      {data.get('status', 'N/A')}")
-                        logging.info("--------------------------")
+
+                        # Красивый вывод данных в консоль
+                        if data.get('type') == 'core_update':
+                            features = data.get('features', {})
+                            prediction = data.get('prediction', 'N/A')
+
+                            wap = features.get('wap', 0)
+                            spread = features.get('spread', 0)
+                            imbalance = features.get('book_imbalance_5_levels', 0)
+
+                            print("-" * 50)
+                            print(f"СИГНАЛ: {prediction}")
+                            print(f"  WAP: {wap:.2f} | Spread: {spread:.4f} | Imbalance: {imbalance:.4f}")
+                            print("-" * 50)
+                        else:
+                            print(json.dumps(data, indent=2))
+
                     except json.JSONDecodeError:
-                        logging.warning(f"Received non-JSON message: {message}")
+                        logger.warning(f"Получено некорректное JSON-сообщение: {message}")
+                    except Exception as e:
+                        logger.error(f"Ошибка при обработке сообщения от ядра: {e}")
 
-        except websockets.exceptions.ConnectionClosed as e:
-            logging.error(f"Connection to server lost: {e}. Retrying in 5 seconds...")
-        except ConnectionRefusedError:
-            logging.error(f"Connection refused. Is the Gem.Bot Core server running? Retrying in 5 seconds...")
+        except (websockets.exceptions.ConnectionClosedError, ConnectionRefusedError) as e:
+            logger.warning(f"Не удалось подключиться к ядру: {e}. Повтор через 5 секунд...")
+            await asyncio.sleep(5)
         except Exception as e:
-            logging.error(f"An unexpected error occurred: {e}. Retrying in 5 seconds...")
+            logger.error(f"Неожиданная ошибка: {e}")
+            await asyncio.sleep(5)
 
-        await asyncio.sleep(5)
+
+async def main():
+    try:
+        await listen_to_core()
+    except asyncio.CancelledError:
+        logger.info("Задача панели была отменена.")
+    finally:
+        logger.info("Панель Стратега была остановлена.")
+
 
 if __name__ == "__main__":
     try:
-        asyncio.run(listen_for_updates())
+        asyncio.run(main())
     except KeyboardInterrupt:
-        logging.info("Strategist Panel is shutting down.")
+        print("Остановка по требованию пользователя.")
